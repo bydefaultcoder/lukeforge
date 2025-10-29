@@ -55,3 +55,6 @@ coverage/
 # public/og-image.png
 # public/favicon.ico
 
+
+# Local Netlify folder
+.netlify
