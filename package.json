@@ -1,0 +1,38 @@
+{
+  "name": "lukeforge-threejs",
+  "version": "1.0.0",
+  "description": "Production-ready Three.js landing site for Lukeforge IT company",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js",
+    "format": "prettier --write \"src/**/*.{js,css,html}\"",
+    "serve:mock": "node server/mock-contact.js",
+    "test:build": "npm run build && node -e \"console.log('✓ Build smoke test passed')\""
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.11",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "vite",
+    "landing-page",
+    "3d-website"
+  ],
+  "author": "Lukeforge",
+  "license": "MIT"
+}
+

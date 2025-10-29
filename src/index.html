@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Lukeforge — Premium IT Solutions</title>
+  <meta name="description" content="We craft innovative digital solutions that transform businesses and drive growth in the modern era.">
+  <meta name="keywords" content="IT solutions, software development, digital transformation, web development, cloud services">
+  <meta name="author" content="Lukeforge">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lukeforge.com/">
+  <meta property="og:title" content="Lukeforge — Premium IT Solutions">
+  <meta property="og:description" content="We craft innovative digital solutions that transform businesses.">
+  <meta property="og:image" content="/og-image.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://lukeforge.com/">
+  <meta property="twitter:title" content="Lukeforge — Premium IT Solutions">
+  <meta property="twitter:description" content="We craft innovative digital solutions that transform businesses.">
+  <meta property="twitter:image" content="/og-image.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Preconnect to Google Fonts for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" as="style" href="/styles/main.css">
+  
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Lukeforge home">
+        <img src="/logo.svg" alt="Lukeforge" class="logo-image" width="180" height="40">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#services" role="menuitem">Services</a></li>
+        <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#contact" role="menuitem" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <!-- Three.js canvas will be injected here -->
+      <div id="hero-canvas-container" class="hero-canvas-container"></div>
+      
+      <!-- Fallback background for LCP optimization -->
+      <div class="hero-fallback" aria-hidden="true"></div>
+      
+      <div class="hero-content">
+        <!-- Description Above Title -->
+        <div class="hero-description-container">
+          <p class="hero-description">
+            We craft <span class="highlight">innovative digital solutions</span> that transform businesses and drive growth in the modern era.
+          </p>
+        </div>
+        
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="sr-only">Lukeforge</span>
+            <span class="hero-subtitle" aria-hidden="true">Forging the Future of IT</span>
+          </h1>
+          
+          <!-- Floating Robot -->
+          <div class="robot-container">
+            <svg class="robot-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Robot Body -->
+              <g class="robot-body">
+                <!-- Main body -->
+                <rect x="60" y="80" width="80" height="90" rx="10" fill="url(#robotGradient)" stroke="#0EA5E9" stroke-width="2"/>
+                
+                <!-- Head -->
+                <rect x="70" y="50" width="60" height="40" rx="8" fill="url(#robotGradient)" stroke="#0EA5E9" stroke-width="2"/>
+                
+                <!-- Antenna -->
+                <line x1="100" y1="50" x2="100" y2="35" stroke="#0EA5E9" stroke-width="2"/>
+                <circle cx="100" cy="32" r="4" fill="#0EA5E9" class="antenna-light"/>
+                
+                <!-- Eyes -->
+                <circle cx="85" cy="65" r="5" fill="#0EA5E9" class="robot-eye left-eye"/>
+                <circle cx="115" cy="65" r="5" fill="#0EA5E9" class="robot-eye right-eye"/>
+                
+                <!-- Mouth -->
+                <path d="M 80 75 Q 100 80 120 75" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+                
+                <!-- Arms -->
+                <rect x="45" y="95" width="15" height="50" rx="5" fill="url(#robotGradient)" stroke="#0EA5E9" stroke-width="2" class="robot-arm left-arm"/>
+                <rect x="140" y="95" width="15" height="50" rx="5" fill="url(#robotGradient)" stroke="#0EA5E9" stroke-width="2" class="robot-arm right-arm"/>
+                
+                <!-- Hands -->
+                <circle cx="52.5" cy="150" r="8" fill="#0EA5E9" class="robot-hand left-hand"/>
+                <circle cx="147.5" cy="150" r="8" fill="#0EA5E9" class="robot-hand right-hand"/>
+                
+                <!-- Body details -->
+                <circle cx="85" cy="105" r="6" fill="#0EA5E9" opacity="0.5"/>
+                <circle cx="115" cy="105" r="6" fill="#0EA5E9" opacity="0.5"/>
+                <rect x="90" y="125" width="20" height="3" rx="1.5" fill="#0EA5E9" opacity="0.7"/>
+                <rect x="90" y="135" width="20" height="3" rx="1.5" fill="#0EA5E9" opacity="0.7"/>
+                <rect x="90" y="145" width="20" height="3" rx="1.5" fill="#0EA5E9" opacity="0.7"/>
+              </g>
+              
+              <!-- Gradients -->
+              <defs>
+                <linearGradient id="robotGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#1A1F3A;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#0A0E27;stop-opacity:1" />
+                </linearGradient>
+                
+                <filter id="robotGlow">
+                  <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+            
+            <!-- Floating particles around robot -->
+            <div class="robot-particle" style="--delay: 0s; --x: 10px; --y: -20px;"></div>
+            <div class="robot-particle" style="--delay: 0.5s; --x: -15px; --y: 15px;"></div>
+            <div class="robot-particle" style="--delay: 1s; --x: 20px; --y: 10px;"></div>
+            <div class="robot-particle" style="--delay: 1.5s; --x: -10px; --y: -15px;"></div>
+          </div>
+          <button class="btn btn-primary btn-cta" data-scroll-to="contact">
+            Get a Quote
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true" data-scroll-to="services">
+        <span class="scroll-text">Scroll to explore</span>
+        <svg class="scroll-arrow" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">What We Offer</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-description">
+            Comprehensive IT solutions tailored to your business needs
+          </p>
+        </div>
+        <div id="services-grid" class="services-grid">
+          <!-- Services will be injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Our Portfolio</span>
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-description">
+            Innovative projects that showcase our expertise
+          </p>
+        </div>
+        <div id="portfolio-grid" class="portfolio-grid">
+          <!-- Portfolio items will be injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Our Story</span>
+          <h2 class="section-title">About Lukeforge</h2>
+          <p class="section-description">
+            A team of experts dedicated to digital excellence
+          </p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-story">
+            <h3>Our Story</h3>
+            <p>
+              Founded with a vision to revolutionize digital experiences, Lukeforge has grown into a 
+              leading IT solutions provider. We combine cutting-edge technology with creative innovation 
+              to deliver exceptional results for our clients.
+            </p>
+            <p>
+              Our multidisciplinary team brings together expertise in software development, cloud 
+              infrastructure, AI/ML, and digital strategy to tackle the most complex challenges.
+            </p>
+          </div>
+          
+          <div class="timeline">
+            <h3>Our Journey</h3>
+            <div id="timeline-container" class="timeline-items">
+              <!-- Timeline will be injected by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Contact Us</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            Ready to transform your business? Let's talk.
+          </p>
+        </div>
+        
+        <div class="contact-content">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                aria-required="true"
+                autocomplete="name"
+              >
+              <span class="error-message" role="alert"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                aria-required="true"
+                autocomplete="email"
+              >
+              <span class="error-message" role="alert"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input 
+                type="text" 
+                id="company" 
+                name="company"
+                autocomplete="organization"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required 
+                aria-required="true"
+              ></textarea>
+              <span class="error-message" role="alert"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" aria-hidden="true">Sending...</span>
+            </button>
+            
+            <div class="form-success" role="status" aria-live="polite" aria-atomic="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p>Thank you! We'll get back to you soon.</p>
+            </div>
+          </form>
+          
+          <div class="contact-info">
+            <div class="contact-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <h4>Visit Us</h4>
+              <p>123 Tech Street<br>San Francisco, CA 94105</p>
+            </div>
+            
+            <div class="contact-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@lukeforge.com">hello@lukeforge.com</a></p>
+            </div>
+            
+            <div class="contact-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <h4>Call Us</h4>
+              <p><a href="tel:+14155551234">+1 (415) 555-1234</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="/logo.svg" alt="Lukeforge" class="footer-logo" width="160" height="36">
+          <p>Forging the future of IT solutions.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lukeforge. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Portfolio Modal -->
+  <div id="portfolio-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal" data-close-modal>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div id="modal-3d-preview" class="modal-3d-preview"></div>
+      
+      <div class="modal-info">
+        <h3 id="modal-title">Project Title</h3>
+        <p id="modal-description">Project description</p>
+        <div id="modal-tags" class="modal-tags"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
+
