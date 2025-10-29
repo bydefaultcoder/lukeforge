@@ -65,11 +65,11 @@ export class Hero3DText {
           
           // Create material with gradient-like effect using vertex colors
           const material = new THREE.MeshStandardMaterial({
-            color: 0xFFFFFF,
+            color: 0x00d4ff,
             metalness: 0.2,
             roughness: 0.5,
-            emissive: 0x0EA5E9,
-            emissiveIntensity: 0.1,
+            emissive: 0x00d4ff,
+            emissiveIntensity: 0.2,
           });
           
           // Create mesh
@@ -108,11 +108,11 @@ export class Hero3DText {
     shapes.forEach(({ width, height, x, y }) => {
       const geometry = new THREE.BoxGeometry(width, height, 0.2);
       const material = new THREE.MeshStandardMaterial({
-        color: 0xFFFFFF,
+        color: 0x00d4ff,
         metalness: 0.2,
         roughness: 0.5,
-        emissive: 0x0EA5E9,
-        emissiveIntensity: 0.1,
+        emissive: 0x00d4ff,
+        emissiveIntensity: 0.2,
       });
       
       const mesh = new THREE.Mesh(geometry, material);
@@ -123,10 +123,10 @@ export class Hero3DText {
     // Add accent bars
     const accentGeometry = new THREE.BoxGeometry(0.15, 0.6, 0.15);
     const accentMaterial = new THREE.MeshStandardMaterial({
-      color: 0x0EA5E9,
+      color: 0x00d4ff,
       metalness: 0.7,
       roughness: 0.2,
-      emissive: 0x0EA5E9,
+      emissive: 0x00d4ff,
       emissiveIntensity: 0.5,
     });
     
@@ -151,7 +151,7 @@ export class Hero3DText {
     
     const glowGeometry = new THREE.SphereGeometry(2, 32, 32);
     const glowMaterial = new THREE.MeshBasicMaterial({
-      color: 0x0EA5E9,
+      color: 0x00d4ff,
       transparent: true,
       opacity: 0.05,
     });

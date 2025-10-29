@@ -115,10 +115,10 @@ function addForgeObject() {
     // Create a low-poly forge/gear-inspired object
     const geometry = new THREE.TorusKnotGeometry(0.8, 0.3, 64, 16);
     const material = new THREE.MeshStandardMaterial({
-      color: 0x0EA5E9,
+      color: 0x00d4ff,
       metalness: 0.8,
       roughness: 0.2,
-      emissive: 0x0EA5E9,
+      emissive: 0x00d4ff,
       emissiveIntensity: 0.3,
     });
     

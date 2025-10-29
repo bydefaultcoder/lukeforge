@@ -13,7 +13,7 @@
   </text>
   
   <!-- Accent line -->
-  <line x1="400" y1="390" x2="800" y2="390" stroke="#0EA5E9" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="390" x2="800" y2="390" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
   
   <!-- Bottom text -->
   <text x="600" y="500" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="400" fill="#666666" text-anchor="middle">

@@ -63,8 +63,8 @@ export class ParticleField {
     const velocities = new Float32Array(this.particleCount * 3);
     
     // Particle color palette
-    const color1 = new THREE.Color(0x0EA5E9); // Electric Blue
-    const color2 = new THREE.Color(0xFFFFFF); // Pure White
+    const color1 = new THREE.Color(0x00d4ff); // Electric Blue
+    const color2 = new THREE.Color(0xffffff); // Pure White
     const color3 = new THREE.Color(0x000000); // Pure Black
     
     for (let i = 0; i < this.particleCount; i++) {
@@ -180,7 +180,7 @@ export class ParticleField {
     
     // Simple point material
     const material = new THREE.PointsMaterial({
-      color: 0xFFFFFF,
+      color: 0x00d4ff,
       size: 0.05,
       transparent: true,
       opacity: 0.4,
